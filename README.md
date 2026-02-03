@@ -85,15 +85,3 @@ wails build
    - `Inputs!B8` = project root (optional, if workbook is outside project)
 5. Click **Run Matcher**.
 
-## GitHub upload notes
-- `.env` is excluded; use `.env.example` for shared config template.
-- Build artifacts/caches are excluded by `.gitignore` (`.gocache/`, `.gomodcache/`, `bin/`, `build/bin/`, `outputs/`, `*.exe`, etc.).
-- If this folder is not yet a git repo, initialize and push:
-  ```powershell
-  git init
-  git add .
-  git commit -m "Initial commit"
-  git branch -M main
-  git remote add origin <your_repo_url>
-  git push -u origin main
-  ```
