@@ -72,6 +72,7 @@ Build:
 ```powershell
 wails build
 ```
+<img width="1342" height="728" alt="image" src="https://github.com/user-attachments/assets/69ae1e02-8347-47a8-8116-e8f18e57685e" />
 
 ### 3) Excel workbook
 1. Open `ResumeMatcher.xlsm`.
