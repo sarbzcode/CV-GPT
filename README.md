@@ -84,4 +84,6 @@ wails build
    - `Inputs!B7` = matcher exe path (optional; defaults to `bin\resume_matcher.exe`)
    - `Inputs!B8` = project root (optional, if workbook is outside project)
 5. Click **Run Matcher**.
+<img width="1366" height="729" alt="image" src="https://github.com/user-attachments/assets/c0726669-5aff-4920-937c-1e508a56078d" />
+
 
