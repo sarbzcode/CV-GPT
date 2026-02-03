@@ -1,0 +1,18 @@
+{
+  "name": "cv-gpt",
+  "outputfilename": "CV-GPT",
+  "frontend:dir": "frontend",
+  "frontend:install": "",
+  "frontend:build": "",
+  "frontend:dev": "",
+  "author": {
+    "name": ""
+  },
+  "info": {
+    "companyName": "",
+    "productName": "CV-GPT",
+    "description": "CV matching desktop app",
+    "copyright": "",
+    "comments": ""
+  }
+}
