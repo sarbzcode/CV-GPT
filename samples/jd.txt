@@ -1,0 +1,4 @@
+Data Analyst Role
+We need a data analyst with strong Excel, SQL, and Python skills.
+Experience with data visualization (Power BI or Tableau), ETL, and reporting.
+Nice to have: statistics, communication, and stakeholder management.

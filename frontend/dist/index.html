@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV-GPT</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <div class="kicker">Desktop Resume Screening</div>
+          <h1>CV-GPT</h1>
+          <p class="sub">Score and rank resumes against a job description in one click.</p>
+        </div>
+        <div class="hero-badge">
+          <div class="dot"></div>
+          <div>
+            <div class="label">Status</div>
+            <div id="status">Idle</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <div class="card inputs">
+          <h2>Inputs</h2>
+
+          <div class="field">
+            <label for="jdPath">Job description</label>
+            <div class="row">
+              <input id="jdPath" type="text" placeholder="Select a .txt, .pdf, or .docx file" />
+              <button id="pickJD">Browse</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="resumesPath">Resumes folder</label>
+            <div class="row">
+              <input id="resumesPath" type="text" placeholder="Select a folder of resumes" />
+              <button id="pickResumes">Browse</button>
+            </div>
+          </div>
+
+          <div class="field split">
+            <div>
+              <label for="topN">Top N</label>
+              <input id="topN" type="number" min="0" placeholder="0 = all" />
+            </div>
+            <div>
+              <label for="outPath">Output CSV</label>
+              <div class="row">
+                <input id="outPath" type="text" placeholder="outputs/results.csv" />
+                <button id="pickOut">Browse</button>
+              </div>
+            </div>
+          </div>
+
+          <button id="run" class="primary">Run matcher</button>
+
+          <div class="meta">
+            <div>
+              <div class="label">Total resumes scored</div>
+              <div id="total">-</div>
+            </div>
+            <div>
+              <div class="label">Results file</div>
+              <div id="outDisplay">-</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card results">
+          <div class="results-header">
+            <h2>Results</h2>
+            <div class="results-search">
+              <input id="resultsSearch" type="search" placeholder="Search candidate name" />
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Candidate</th>
+                  <th>Score</th>
+                  <th>Strengths</th>
+                  <th>Weaknesses</th>
+                  <th>Explanation</th>
+                  <th>Evaluation</th>
+                  <th>File</th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody">
+                <tr>
+                  <td colspan="8" class="empty">No results yet</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

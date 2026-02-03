@@ -1,0 +1,3 @@
+Jane Smith
+Skills: Excel, Tableau, communication, reporting
+Experience: Data visualization, stakeholder management, analytics.

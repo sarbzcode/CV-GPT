@@ -1,0 +1,3 @@
+John Doe
+Skills: Python, SQL, Excel, Power BI
+Experience: Built ETL pipelines, created dashboards, automated reports.
